@@ -39,7 +39,7 @@ app.post('/api/shorturl', function(req, res) {
       }
       const result = urls.insertOne(urlDoc);
       console.log(result);
-      res.json({ orginal_url: url, 
+      res.json({ original_url: url, 
                 short_url: urlCount
                });
     }
